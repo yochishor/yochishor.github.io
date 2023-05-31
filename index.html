@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at top left, #0d233a, #000);
+        }
+        .header, .subheader {
+            text-align: center;
+            padding: 5px;
+            background-color: transparent;
+            color: white;
+        }
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 0.1em; /* adjust this value to bring h2 closer */
+        }
+        .header h2 {
+            font-size: 1.5em;
+            margin-top: 0.1em; /* adjust this value to bring h1 closer */
+        }
+        .header h4 {
+            color: white;
+        }
+        .header h4 a {
+            color: #ffeb3b; /* adjust this value for the link color */
+            text-decoration: none;
+        }
+        .content {
+            margin: 10px auto;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+            backdrop-filter: blur(10px);
+            width: 100%;
+        }
+        .video {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-bottom: 55%; /* adjust this value as per your video's aspect ratio */
+            margin: 10px auto 0 auto;
+        }
+        p {
+            text-align: center;
+            color: #ffffff;
+        }
+        @media(max-width: 600px) {
+            .header h1, .subheader h2 {
+                font-size: 1.5em;
+            }
+            .header h2 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Beyond Walls</h1>
+        <h2>A TorahAnytime Film</h2>
+		<h4>Liked the Film? <a href="mailto:feedback@TorahAnytime.com" target="_blank">Click here and let us know!</a></h4>
+    </div>
+    <div class="content">
+        <div class="video">
+            <iframe src="https://cdn.jwplayer.com/players/jij20Dy5-a8kDC1GW.html" style="position:absolute; width:100%; height:100%;" frameborder="0" scrolling="auto" title="Beyond Walls (trailer)" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
